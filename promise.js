@@ -20,4 +20,5 @@ Promise.all(urls.map(url => {
         }
     })
     .catch(err => console.log('ughhhh fix it!', err))
+    // Finally is meant for thigs you still want to execute regardless of an error
     .finally(data => console.log('extra', data));
