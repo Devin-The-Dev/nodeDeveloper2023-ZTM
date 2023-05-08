@@ -1,3 +1,10 @@
-const greeting = require('./helloWorld');
+const request = require('./fakeRequest');
+const response = require('./fakeResponse');
 
-console.log(greeting.greeting());
+function makeRequest(url, data) {
+    request.send(url, data);
+    return response.read();
+}
+
+const responseData = makeRequest('https://www.google.com', 'hello');
+console.log(responseData);
