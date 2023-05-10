@@ -1,6 +1,6 @@
 // This shows how to make a webserver
 
-// First ge tthe HTTP module
+// First get the HTTP module
 const http = require('http');
 
 // 3000 is what we'll us for our localhost
