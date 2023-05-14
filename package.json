@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node package-example/request.js",
+    "dev": "nodemon package-example/request.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "nodemon": "^2.0.22"
+  }
+}
